@@ -41,11 +41,13 @@
   display: inline-block;
   width: 100%;
   margin: 10px 0;
+  background-color: bisque;
 }
 .row > [class*="col-"] {
   float: left;
   margin-left: var(--half-gap);
   margin-right: var(--half-gap);
+  background-color: cornflowerblue;
 }
 .row > .col-1 {
   width: var(--col1);
