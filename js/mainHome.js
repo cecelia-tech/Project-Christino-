@@ -1,21 +1,31 @@
 // IMPORT
 // header
-// services
+// hero
+//about
+//interests
 // achievements
+// services
 //featured projects
+//work expertise
+//portfolio
 //feedback
-//price list
 //blog
-//icons
+//freelance
+//contact
 // footer
 
 // FUNKCIJU PANAUDOJIMAS
 // header
-// services
+// hero
+//about
+//interests
 // achievements
+// services
 //featured projects
+//work expertise
+//portfolio
 //feedback
-//price list
 //blog
-//icons
+//freelance
+//contact
 // footer
