@@ -6,7 +6,7 @@ _Website project_
 
 This project is for educational purposes only.
 
-Site published at https://cecelia-tech.github.io/Project-Personal-/
+Site published at https://cecelia-tech.github.io/Project-Christino-/
 
 Design: [Christiano](http://shreethemes.in/cristino/layouts/index.html)
 
