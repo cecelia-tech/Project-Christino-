@@ -106,3 +106,84 @@
   color: var(--colour-red);
   font-size: 16px;
 }
+.logo {
+  width: 5rem;
+  height: 18px;
+}
+.links {
+  float: right;
+}
+.navigacija {
+  line-height: 3em;
+}
+
+nav > a {
+  padding: 0 15px;
+  font-size: 0.7em;
+  text-decoration: none;
+}
+nav > .fa {
+  font-size: 2.25em;
+}
+.hero {
+  background-image: url(../../img/home/home.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+.about {
+  width: fit-content;
+  border: 15px solid gainsboro;
+  border-radius: 10px;
+}
+.hobbies {
+  padding: 15px 20px 15px 5px;
+  background-color: var(--colour-blue-light);
+  margin-bottom: 30px;
+  font-size: 1.1em;
+  font-weight: 400;
+  line-height: 2em;
+  border-radius: 7px;
+}
+.hobbies .fa {
+  border-right: 1px solid var(--colour-grey);
+  line-height: 2em;
+  font-size: 1.1em;
+  height: 100%;
+}
+.achievements {
+  background-image: url(../../img/portfolio/bg-counter.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  color: #fff;
+  line-height: 50px;
+}
+.achievements .fa,
+.services-main .fa {
+  color: var(--colour-red);
+  font-size: 30px;
+}
+.achievements .numbers {
+  font-size: 30px;
+  font-weight: 500;
+}
+.achievements .text {
+  font-weight: 500;
+  font-size: 18px;
+}
+.services {
+  border: 1px solid var(--colour-grey);
+  margin-bottom: 30px;
+}
+.services-main > .fa,
+.mini-title,
+p {
+  margin-bottom: 20px;
+}
+.date {
+  padding: 10px;
+  border: 1px solid var(--colour-grey);
+  border-radius: 7px;
+  text-align: center;
+}
