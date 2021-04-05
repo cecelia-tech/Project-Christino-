@@ -137,19 +137,23 @@ nav > .fa {
   border-radius: 10px;
 }
 .hobbies {
-  padding: 15px 20px 15px 5px;
+  padding: 0px 20px 0px 0px;
   background-color: var(--colour-blue-light);
   margin-bottom: 30px;
-  font-size: 1.1em;
+  font-size: 17px;
   font-weight: 400;
-  line-height: 2em;
+  line-height: 60px;
   border-radius: 7px;
+  text-align: left;
 }
 .hobbies .fa {
-  border-right: 1px solid var(--colour-grey);
-  line-height: 2em;
-  font-size: 1.1em;
-  height: 100%;
+  border-right: 1px solid gainsboro;
+  line-height: 60px;
+  font-size: 25px;
+
+  float: left;
+  padding-inline: 25px;
+  width: 34%;
 }
 .achievements {
   background-image: url(../../img/portfolio/bg-counter.jpeg);
@@ -173,8 +177,10 @@ nav > .fa {
   font-size: 18px;
 }
 .services {
-  border: 1px solid var(--colour-grey);
+  border: 1px solid gainsboro;
   margin-bottom: 30px;
+  padding: 40px 20px;
+  border-radius: 9px;
 }
 .services-main > .fa,
 .mini-title,
