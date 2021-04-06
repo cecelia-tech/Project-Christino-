@@ -1,0 +1,17 @@
+.services {
+  border: 1px solid gainsboro;
+  margin-bottom: 30px;
+  padding: 40px 20px;
+  border-radius: 9px;
+  margin-top: 40px;
+}
+.services > .fa {
+  margin-bottom: 20px;
+}
+.services > .mini-title {
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.services > p {
+  margin-bottom: 20px;
+}

@@ -7,20 +7,47 @@
 @import "./3rd-party/font-awesome.min.css";
 /* components */
 @import "./components/button.css";
+@import "./components/service.css";
 @import "./components/footer.css";
 @import "./components/header.css";
 
 /* header */
+
 /* hero */
-/* about *
-/* interests *
-/*achievements  */
+/* about */
+
+.about-img {
+  width: fit-content;
+  border: 15px solid gainsboro;
+  border-radius: 10px;
+}
+.about .left-column {
+  padding-top: 50px;
+  padding-left: 30px;
+}
+.red-title {
+  font-size: 25px;
+  color: var(--colour-red);
+  font-weight: 500;
+}
+.left-column > p {
+  margin-bottom: 20px;
+}
+.left-column > img {
+  margin-bottom: 20px;
+}
+.left-column > .btn {
+  margin-bottom: 20px;
+  display: block;
+}
+/* interests */
+/*achievements */
 /* services */
-/* featured projects *
-/* work expertise *
-/* portfolio *
-/* feedback *
-/* blog *
-/* freelance *
-/* contact *
+/* featured projects */
+/* work expertise */
+/* portfolio */
+/* feedback */
+/* blog */
+/* freelance */
+/* contact */
 /* footer */
