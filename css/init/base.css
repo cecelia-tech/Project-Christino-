@@ -131,11 +131,7 @@ nav > .fa {
   background-position: right;
   background-size: cover;
 }
-.about {
-  width: fit-content;
-  border: 15px solid gainsboro;
-  border-radius: 10px;
-}
+
 .hobbies {
   padding: 0px 20px 0px 0px;
   background-color: var(--colour-blue-light);
@@ -176,17 +172,7 @@ nav > .fa {
   font-weight: 500;
   font-size: 18px;
 }
-.services {
-  border: 1px solid gainsboro;
-  margin-bottom: 30px;
-  padding: 40px 20px;
-  border-radius: 9px;
-}
-.services-main > .fa,
-.mini-title,
-p {
-  margin-bottom: 20px;
-}
+
 .date {
   padding: 10px;
   border: 1px solid var(--colour-grey);
