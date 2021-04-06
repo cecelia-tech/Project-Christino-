@@ -5,6 +5,8 @@
 //interests
 // achievements
 // services
+import { servicesData} from './data/servicesData.js';
+import {services} from './components/services/services.js';
 //featured projects
 //work expertise
 //portfolio
@@ -21,6 +23,7 @@
 //interests
 // achievements
 // services
+services('#serviceItem', servicesData)
 //featured projects
 //work expertise
 //portfolio
