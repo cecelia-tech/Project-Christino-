@@ -1,4 +1,27 @@
 .container.header {
   margin-top: 0px;
   padding: 0;
+  position: relative;
+}
+.logo {
+  width: 125px;
+  position: absolute;
+  top: 25px;
+  left: 35px;
+}
+.links {
+  float: right;
+}
+.header > .navigacija {
+  line-height: 50px;
+}
+nav > a {
+  text-align: center;
+  padding: 0 15px;
+  font-size: 11px;
+  text-decoration: none;
+}
+nav > .fa {
+  font-size: 35px;
+  line-height: 50px;
 }
