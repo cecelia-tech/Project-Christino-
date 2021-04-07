@@ -14,6 +14,15 @@
 /* header */
 
 /* hero */
+.hero .text-grey {
+  margin-bottom: 30px;
+}
+.hero .btn-white {
+  margin-left: 10px;
+}
+.btn-white .fa {
+  line-height: 22px;
+}
 /* about */
 
 .about-img {
@@ -33,7 +42,9 @@
 .left-column > p {
   margin-bottom: 20px;
 }
-.left-column > img {
+.left-column > .sign {
+  display: block;
+  width: 15%;
   margin-bottom: 20px;
 }
 .left-column > .btn {
