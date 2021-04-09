@@ -1,0 +1,20 @@
+form {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+}
+
+.form-row {
+  display: inline-block;
+  width: 100%;
+}
+.form-row > input {
+  display: inline-block;
+  width: 100%;
+  line-height: 20px;
+  padding: 7px;
+  margin-bottom: 30px;
+}
+form > button {
+  display: block;
+}
