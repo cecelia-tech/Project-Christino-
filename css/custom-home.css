@@ -9,6 +9,7 @@
 @import "./components/button.css";
 @import "./components/service.css";
 @import "./components/footer.css";
+@import "./components/form.css";
 @import "./components/header.css";
 
 /* header */
@@ -110,16 +111,90 @@
 }
 /* services */
 /* featured projects */
-.date {
+.participation-container {
+  display: inline-block;
+  width: 100%;
   padding: 10px;
   border: 1px solid var(--colour-grey);
   border-radius: 7px;
   text-align: center;
 }
+@media (min-width: 767px) {
+  .part-cont-right {
+    float: right;
+  }
+}
+@media (min-width: 767px) {
+  .part-cont-left {
+    float: left;
+  }
+}
+/* .participation-tree {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} */
 /* work expertise */
+.expertise {
+  background-image: url(../img/portfolio/skills.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.expertise-btn {
+  border: 1px solid #fff;
+  padding: 10px 15px;
+  float: left;
+}
 /* portfolio */
 /* feedback */
 /* blog */
 /* freelance */
+.freelance {
+  background-image: url(../img/portfolio/hireme.jpeg);
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  width: 100%;
+  border-radius: 30px;
+  padding: 50px 20px;
+  margin: 0 10px;
+  text-align: center;
+}
+.freelance-title {
+  display: inline-block;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+  font-weight: 600;
+}
+.freelance > .btn {
+  margin-top: 30px;
+  line-height: 20px;
+  padding: 10px 25px;
+  width: max-content;
+}
+.freelance .btn > i {
+  line-height: 20px;
+}
 /* contact */
+.contact-block {
+  text-align: center;
+  display: inline-block;
+}
+.contact-element {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.contact-element > i,
+p {
+  margin-bottom: 20px;
+}
+.contact-element > i {
+  font-size: 35px;
+}
+.contact-element > p:first-of-type {
+  font-weight: 500;
+  font-size: 18px;
+}
 /* footer */
