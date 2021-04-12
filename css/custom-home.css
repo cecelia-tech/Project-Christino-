@@ -96,6 +96,15 @@
   color: #fff;
   line-height: 50px;
 }
+.achievement-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (min-width: 991px) {
+  .achievement-item {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
 .achievements .fa,
 .services-main .fa {
   color: var(--colour-red);
