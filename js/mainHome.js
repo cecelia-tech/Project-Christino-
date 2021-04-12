@@ -4,6 +4,8 @@
 //about
 //interests
 // achievements
+import{Achievements} from './components/achievements/Achievements.js';
+import{achievementsData} from './data/achievementsData.js';
 // services
 import { servicesData} from './data/servicesData.js';
 import {services} from './components/services/services.js';
@@ -22,6 +24,7 @@ import {services} from './components/services/services.js';
 //about
 //interests
 // achievements
+const achievement = new Achievements('#achievement_block', achievementsData);
 // services
 services('#serviceItem', servicesData)
 //featured projects
