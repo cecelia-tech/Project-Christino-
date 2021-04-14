@@ -38,6 +38,13 @@ const headerData = {
         type: 'link',
         href: '#',
         text: 'Pages',
+        submenu:[
+            {type: 'link', href: '#', text: 'Blog'},
+            {type: 'link', href: '#', text: 'Blog Detail'},
+            {type: 'link', href: '#', text: 'Portfolio'},
+            {type: 'link', href: '#', text: 'Portfolio Detail'},
+        ],
+        submenuDirection: 'bottom',
     },
     ],
     socials:[

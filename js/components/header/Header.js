@@ -44,7 +44,7 @@ class Header {
     }
     renderBase() {
         const HTML = `
-        <div class="row navigacija">
+        <div class="row col-12 navigacija">
         <div class="leftLogo"></div>
         <nav class="navItems"></nav>
         <div class="socials"></div></div>`
