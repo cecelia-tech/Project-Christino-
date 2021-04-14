@@ -27,7 +27,7 @@
 .hero {
   background-image: url(../../img/home/home.png);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
   background-size: cover;
 }
 /* about */

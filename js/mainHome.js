@@ -1,5 +1,9 @@
 // IMPORT
 // header
+import {Header} from './components/header/Header.js';
+import { headerData } from './data/headerData.js';
+
+
 // hero
 //about
 //interests
@@ -20,6 +24,7 @@ import {services} from './components/services/services.js';
 
 // FUNKCIJU PANAUDOJIMAS
 // header
+new Header ('#main_header', headerData);
 // hero
 //about
 //interests
