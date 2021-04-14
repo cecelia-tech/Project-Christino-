@@ -1,20 +1,25 @@
 .container.header {
   margin-top: 0px;
   padding: 0;
-  position: relative;
+  /* position: relative; */
+}
+/* apatinis dadetas po OOP kiti uzkomentuoti */
+.container > .navigacija {
+  margin: 0px;
+  padding: 0;
 }
 .logo {
   width: 125px;
-  position: absolute;
+  /* position: absolute;
   top: 25px;
-  left: 35px;
+  left: 35px; */
 }
 .links {
   float: right;
 }
-.header > .navigacija {
+/* .header > .navigacija {
   line-height: 50px;
-}
+} */
 nav > a {
   text-align: center;
   padding: 0 15px;
