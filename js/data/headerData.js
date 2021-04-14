@@ -39,7 +39,12 @@ const headerData = {
         href: '#',
         text: 'Pages',
     },
-]
+    ],
+    socials:[
+        {facebook: 'fa-facebook-square'},
+        {twitter: 'fa-twitter-square'},
+        {instagram: 'fa-instagram'}
+    ]
 
 }
 export { headerData}

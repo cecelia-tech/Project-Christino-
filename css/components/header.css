@@ -5,28 +5,41 @@
 }
 /* apatinis dadetas po OOP kiti uzkomentuoti */
 .container > .navigacija {
-  margin: 0px;
-  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 40px;
+  position: relative;
+  /* margin: 0px; */
+  /* padding: 0; */
 }
 .logo {
   width: 125px;
-  /* position: absolute;
-  top: 25px;
-  left: 35px; */
+  vertical-align: middle;
 }
-.links {
-  float: right;
-}
-/* .header > .navigacija {
-  line-height: 50px;
-} */
+
 nav > a {
+  display: inline-block;
   text-align: center;
   padding: 0 15px;
+  color: #333;
   font-size: 11px;
+  font-weight: 500;
+  line-height: inherit;
   text-decoration: none;
+  text-transform: uppercase;
 }
-nav > .fa {
+nav > a:hover,
+nav > a.selectedNavLink {
+  color: var(--colour-red);
+}
+.socials > a > .fa {
   font-size: 35px;
-  line-height: 50px;
+  line-height: inherit;
+  color: #000;
+  transition: all 0.25s;
+}
+.socials > a > .fa:hover {
+  color: var(--colour-red);
 }

@@ -15,15 +15,13 @@ class Logo {
         if (!this.isValidData) {
             return false;
         }
-        //console.log(this.parentDOM);
-        const DOM = this.parentDOM.querySelector('.logoFile');
+        const DOM = this.parentDOM.querySelector('.leftLogo');
 
         if (!DOM) {
             console.error('pagal pateikta selektoriu nepavyko rasti elemento');
             return false;
         }
         this.DOM = DOM;
-//console.log(this.DOM);
         this.render();
     }
 
@@ -37,7 +35,7 @@ class Logo {
     render () {
         const {imgPath, mainLogo, alt} =this.data;
         let HTML = `
-        <img src="${ imgPath + mainLogo}" alt="${alt}"class=" logo" >
+        <a href="#"><img src="${ imgPath + mainLogo}" alt="${alt}"class=" logo" ></a>
         `;
         this.DOM.insertAdjacentHTML('afterbegin', HTML)
     }

@@ -1,5 +1,6 @@
 import {Logo} from './Logo.js';
 import {Navigation} from './Nav.js';
+import {Socials} from './Socials.js';
 class Header {
     constructor (selector, data){
         this.selector = selector;
@@ -43,13 +44,17 @@ class Header {
     }
     renderBase() {
         const HTML = `
-        <div class="row navigacija"><div></div><nav class="logoFile"></nav></div>
-        `
+        <div class="row navigacija">
+        <div class="leftLogo"></div>
+        <nav class="navItems"></nav>
+        <div class="socials"></div></div>`
         this.DOM.innerHTML = HTML; 
 
         const rowDOM = this.DOM.querySelectorAll('.row');
-//console.log(rowDOM);
-        new Logo(rowDOM, this.data.logo)
+
+        new Logo(rowDOM[0], this.data.logo);
+        new Navigation (rowDOM[0], this.data.nav);
+        new Socials (rowDOM[0], this.data.socials);
     }
 }
 export { Header }
