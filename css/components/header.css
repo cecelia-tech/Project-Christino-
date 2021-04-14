@@ -1,25 +1,31 @@
 .container.header {
+  display: flex;
   margin-top: 0px;
   padding: 0;
   /* position: relative; */
 }
 /* apatinis dadetas po OOP kiti uzkomentuoti */
-.container > .navigacija {
+.container > .row.navigacija {
   display: flex;
+  width: 100%;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   line-height: 40px;
   position: relative;
-  /* margin: 0px; */
+  margin: 0px 30px;
   /* padding: 0; */
 }
 .logo {
   width: 125px;
   vertical-align: middle;
 }
-
-nav > a {
+.navigacija > .navItems {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+nav a {
   display: inline-block;
   text-align: center;
   padding: 0 15px;
@@ -30,7 +36,7 @@ nav > a {
   text-decoration: none;
   text-transform: uppercase;
 }
-nav > a:hover,
+nav a:hover,
 nav > a.selectedNavLink {
   color: var(--colour-red);
 }
@@ -42,4 +48,37 @@ nav > a.selectedNavLink {
 }
 .socials > a > .fa:hover {
   color: var(--colour-red);
+}
+.navItems > .dropdown {
+  display: flex;
+  position: relative;
+}
+.navItems > .dropdown > .label {
+}
+.navItems > .dropdown .submenu {
+  display: none;
+  width: 150px;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 1px 2px #0001;
+  border-radius: 5px;
+}
+.navItems > .dropdown.bottom .submenu {
+  left: 0;
+  top: 100%;
+}
+.navItems > .dropdown.bottom .submenu > .item {
+  text-transform: none;
+  font-size: 12px;
+  line-height: inherit;
+}
+.dropdown.bottom a > i {
+  padding-left: 5px;
+  font-size: inherit;
+  line-height: inherit;
+}
+.navItems > .dropdown:hover > .submenu {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
 }
