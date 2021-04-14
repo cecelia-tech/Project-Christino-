@@ -5,17 +5,28 @@ form {
 }
 
 .form-row {
-  display: inline-block;
+  display: flex;
+  flex-flow: row wrap;
   width: 100%;
 }
-.form-row > input {
+.form-row > input,
+textarea {
   display: inline-block;
   width: 100%;
   line-height: 20px;
   padding: 7px;
   margin-bottom: 30px;
 }
-form button {
+@media (min-width: 991px) {
+  .form-row-left {
+    float: left;
+  }
+}
+form > button {
   display: block;
   border: none;
+}
+.form-row > textarea {
+  float: right;
+  height: 180px;
 }
