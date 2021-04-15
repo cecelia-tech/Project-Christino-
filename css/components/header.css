@@ -53,8 +53,8 @@ nav > a.selectedNavLink {
   display: flex;
   position: relative;
 }
-.navItems > .dropdown > .label {
-}
+/* .navItems > .dropdown > .label {
+} */
 .navItems > .dropdown .submenu {
   display: none;
   width: 150px;
