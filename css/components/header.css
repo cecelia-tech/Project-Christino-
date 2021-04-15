@@ -71,6 +71,7 @@ nav > a.selectedNavLink {
   text-transform: none;
   font-size: 12px;
   line-height: inherit;
+  text-align: left;
 }
 .dropdown.bottom a > i {
   padding-left: 5px;

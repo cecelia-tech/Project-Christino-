@@ -31,7 +31,6 @@ class Socials{
     render(){
         let HTML = '';
         for (const social of this.data) {
-            console.log(social);
             HTML += `<a href="#"><i class="fa ${social.facebook}"></i></a>
             <a href="#"><i class="fa ${social.twitter}" ></i></a>
             <a href="#"><i class="fa ${social.instagram}"></i></a>
