@@ -1,7 +1,7 @@
 const headerData = {
     logo: {
         imgPath: '../img/portfolio/',
-        mainLogo: 'logodark.png',
+        mainLogo: 'logopakeistas.png',
         alt: 'Cristino logo',
     },
     nav:[{
