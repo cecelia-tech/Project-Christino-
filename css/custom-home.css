@@ -25,7 +25,7 @@
   line-height: 22px;
 }
 .hero {
-  background-image: url(../../img/home/home.png);
+  background-image: url(../img/home/pagrindine.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -89,7 +89,7 @@
 }
 /*achievements */
 .achievements {
-  background-image: url(../../img/portfolio/bg-counter.jpeg);
+  background-image: url(../img/portfolio/poachievements.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
