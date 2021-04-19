@@ -7,10 +7,11 @@
 @import "./3rd-party/font-awesome.min.css";
 /* components */
 @import "./components/button.css";
-@import "./components/service.css";
 @import "./components/footer.css";
 @import "./components/form.css";
+@import "./components/gallery.css";
 @import "./components/header.css";
+@import "./components/service.css";
 
 /* header */
 
