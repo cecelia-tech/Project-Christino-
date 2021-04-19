@@ -4,6 +4,10 @@ class Gallery {
         this.data = data;
 
         this.DOM = null;
+        this.allGalleryItemsDOM = [];
+        this.activeFilterIndex = 0;
+        this.uniqueTags = [];
+
         this.init();
     }
     init() {
@@ -19,9 +23,9 @@ class Gallery {
             console.error('ERROR: could not locate the element by provided selector');
             return false;
         }
-
+        this.formatData();
         this.render();
-        this.generateFilter();
+        this.addEvents();
     }
     isValidSelector() {
         return true;
@@ -29,6 +33,16 @@ class Gallery {
     isValidData() {
         return true;
     }
+
+    formatData() {
+        for (const item of this.data.list) {
+            for (let i = 0; i < item.tags.length; i++) {
+                item.tags[i] = item.tags[i].toLowerCase();
+                
+            }
+        }
+    }
+
     render() {
 
 
@@ -36,7 +50,7 @@ class Gallery {
                 <div class="list"> ${this.generateList()}</div>`
         this.DOM.innerHTML = HTML;
         this.DOM.classList.add('gallery');
-        
+        this.allGalleryItemsDOM = this.DOM.querySelectorAll('.list > .item');
     }
     generateList() {
         let HTML = '';
@@ -66,16 +80,43 @@ class Gallery {
         }
         //atfiltruojame unikalius tagus
         for (const tag of allTags) {
-            const formatedTag = tag.toLowerCase();
-            if (!uniqueTags.includes(formatedTag)) {
-                uniqueTags = [...uniqueTags, formatedTag];
+            // const formatedTag = tag.toLowerCase(); //panaikinam, nes dadejom formatData(){}
+            if (!uniqueTags.includes(tag)) {
+                uniqueTags = [...uniqueTags, tag];
             }
         }
         for (const tag of uniqueTags) {
             HTML += `<div class="item">${tag}</div>`;
-        }console.log(HTML);
+        }
+        this.uniqueTags = ['all', ...uniqueTags]
         return HTML;
         
+    }
+    addEvents(){
+        const filterItems = this.DOM.querySelectorAll('.filter > .item');
+        filterItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                //nuimti senam elementui active clase
+                // this.DOM.querySelector('.filter > .item.active').classList.remove('active');//toki metoda galim naudoti mazai galerijai
+                filterItems[this.activeFilterIndex].classList.remove('active');
+                item.classList.add('active');   
+                this.activeFilterIndex = index;
+
+                this.updateList(this.uniqueTags[index]);
+            })  
+        });
+    }
+    updateList(tag){
+        
+        
+        for (let i = 0; i < this.data.list.length; i++) {
+            const itemTags = this.data.list[i].tags;
+            if (itemTags.includes(tag) || tag === 'all') {
+                this.allGalleryItemsDOM[i].classList.remove('hidden');
+            }else {
+                this.allGalleryItemsDOM[i].classList.add('hidden');
+            }
+        }
     }
 }
 export { Gallery }
