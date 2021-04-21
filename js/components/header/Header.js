@@ -1,8 +1,8 @@
-import {Logo} from './Logo.js';
-import {Navigation} from './Nav.js';
-import {Socials} from './Socials.js';
+import { Logo } from './Logo.js';
+import { Navigation } from './Nav.js';
+import { Socials } from './Socials.js';
 class Header {
-    constructor (selector, data){
+    constructor(selector, data) {
         this.selector = selector;
         this.data = data;
 
@@ -20,15 +20,16 @@ class Header {
         }
 
         const DOM = document.querySelector(this.selector);
-        
+
         if (!DOM) {
-                console.error("ERROR pagal pateikta seloktoriu nepavyko rasti elemento");
-                return false;
+            console.error("ERROR pagal pateikta seloktoriu nepavyko rasti elemento");
+            return false;
         }
         this.DOM = DOM;
-        
+
         this.DOM.classList.add('header');
         this.renderBase();
+        this.addEvents();
         //validuoti selector
         //validuoti data
         //sukurti DOM vieta
@@ -48,13 +49,24 @@ class Header {
         <div class="leftLogo"></div>
         <nav class="navItems"></nav>
         <div class="socials"></div></div>`
-        this.DOM.innerHTML = HTML; 
+        this.DOM.innerHTML = HTML;
 
         const rowDOM = this.DOM.querySelectorAll('.row');
 
         new Logo(rowDOM[0], this.data.logo);
-        new Navigation (rowDOM[0], this.data.nav);
-        new Socials (rowDOM[0], this.data.socials);
+        new Navigation(rowDOM[0], this.data.nav);
+        new Socials(rowDOM[0], this.data.socials);
+    }
+    addEvents() {
+        const header = document.querySelector('.header');
+
+        addEventListener('scroll', () => {
+            if (scrollY > 50) {
+                header.classList.add('scroll');
+            } else {
+                header.classList.remove('scroll');
+            }
+        })
     }
 }
 export { Header }
