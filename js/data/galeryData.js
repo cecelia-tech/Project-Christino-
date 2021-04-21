@@ -7,7 +7,7 @@ const blogGallry = {
             title: 'The coffee cup',
             href: '#',
             subtitle: 'Designing',
-            tags: ['grey', 'technology', 'trio']
+            tags: ['designing', 'development']
         },
         {
             img: 'blog-3.jpeg',
@@ -15,7 +15,7 @@ const blogGallry = {
             title: 'The micro headphones',
             href: '#',
             subtitle: 'Development',
-            tags: ['trio', 'technology']
+            tags: ['branding', 'development']
         },
         {
             img: 'blog-4.jpeg',
@@ -23,7 +23,7 @@ const blogGallry = {
             title: 'Working keybord',
             href: '#',
             subtitle: 'Branding',
-            tags: ['single', 'leisure']
+            tags: ['branding', 'designing']
         },
         {
             img: 'blog-5.jpeg',
@@ -31,7 +31,7 @@ const blogGallry = {
             title: 'The branded laptop',
             href: '#',
             subtitle: 'Photoshop',
-            tags: ['trio', 'technology']
+            tags: ['photography']
         },
         {
             img: 'blog-6.jpeg',
@@ -39,7 +39,7 @@ const blogGallry = {
             title: 'Camera',
             href: '#',
             subtitle: 'Illustrations',
-            tags: ['multi', 'technology']
+            tags: ['photography']
         },
         {
             img: 'blog-7.jpeg',
@@ -47,7 +47,7 @@ const blogGallry = {
             title: 'The wooden desk',
             href: '#',
             subtitle: 'Photography',
-            tags: ['multi', 'leisure']
+            tags: ['photography']
         },
     ]
 }
