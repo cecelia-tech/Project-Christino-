@@ -1,0 +1,117 @@
+:root {
+  --min-item-width: 260px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+.gallery > .filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: capitalize;
+  user-select: none;
+}
+.gallery > .list {
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  grid-template-columns: repeat(auto-fill, minmax(var(--min-item-width), 1fr));
+  gap: 30px 20px;
+}
+/* @media (min-width: 767px) {
+  .gallery > .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+} */
+.gallery .list > .item {
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+  /* position: relative; */
+  transition: all 0.25s;
+}
+.gallery .list > .item:hover {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  /* transform: translate3d(12px, 0%, 1em); */
+}
+/* .blogPic::after {
+  position: absolute;
+content: '';
+background-color: #5558;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 1;
+} */
+.gallery .list > .item.hidden {
+  display: none;
+}
+.gallery > .filter > .item {
+  padding: 8px 15px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: all 1s;
+  cursor: pointer;
+}
+.gallery > .filter > .item:hover {
+  background-color: var(--colour-red);
+  color: #fff;
+}
+.gallery > .filter > .item.active {
+  background-color: var(--colour-red);
+  color: #fff;
+}
+.gallery .item > .blogPic {
+  width: 100%;
+  height: var(--min-item-width);
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  z-index: 0;
+}
+.gallery .item > .blogPic:hover {
+transform: scale(1.2, 1.2);
+/* width: 100%;
+height: 60%; */
+}
+.gallery .item > .content {
+  /* position: absolute;
+bottom: 0;
+right: 0;
+left: 0; */
+  text-align: center;
+  background-color: #fff;
+  padding: 30px 0;
+}
+.gallery .item .blogSubtitle {
+  /* position: absolute; */
+  font-size: 14px;
+  color: var(--colour-grey-dark);
+}
+.gallery .item .blogTitle {
+  margin-bottom: 15px;
+}
+.gallery .item .blogTitle > a {
+  /* position: absolute; */
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--colour-grey-dark);
+}
+.gallery .item .blogTitle > a:hover {
+  color: var(--colour-red);
+}
+@media (min-width: 1000px) {
+  :root {
+    --min-item-width: 300px;
+  }
+}

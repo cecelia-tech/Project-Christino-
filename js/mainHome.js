@@ -16,6 +16,8 @@ import {services} from './components/services/services.js';
 //featured projects
 //work expertise
 //portfolio
+import {blogGallry} from './data/galeryData.js';
+import { Gallery } from "./components/galery/Galery.js";
 //feedback
 //blog
 //freelance
@@ -35,6 +37,7 @@ services('#serviceItem', servicesData)
 //featured projects
 //work expertise
 //portfolio
+new Gallery ('#portfolio_block', blogGallry)
 //feedback
 //blog
 //freelance

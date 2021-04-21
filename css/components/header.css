@@ -2,7 +2,13 @@
   display: flex;
   margin-top: 0px;
   padding: 10px 0;
-  /* position: relative; */
+  position: fixed;
+  top:0;
+  right: 0;
+  left: 0;
+}
+main > .container:first-child{
+  padding-top: 140px;
 }
 /* apatinis dadetas po OOP kiti uzkomentuoti */
 .container > .row.navigacija {
