@@ -157,24 +157,37 @@
 }
 /* services */
 /* featured projects */
-.participation-container {
+.participation-tree {
   display: inline-block;
   width: 100%;
+}
+.middle-part {
+  display: flex;
+    flex-wrap: wrap;
+  /* width: 100%; */
+  /* height: auto; */
+}
+.participation-container {
+  display: inline-block;
+  /* width: 100%; */
   padding: 10px;
   border: 1px solid var(--colour-grey);
   border-radius: 7px;
   text-align: center;
 }
 @media (min-width: 767px) {
-  .part-cont-right {
+  .middle-part .part-cont-right {
     float: right;
   }
-}
-@media (min-width: 767px) {
-  .part-cont-left {
+  .middle-part .part-cont-left {
     float: left;
   }
 }
+/* @media (min-width: 767px) {
+  .part-cont-left {
+    float: left;
+  }
+} */
 /* .participation-tree {
   display: grid;
   grid-template-columns: 1fr 1fr;
