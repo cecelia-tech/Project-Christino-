@@ -8,25 +8,49 @@ form {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
+  height: auto;
 }
 .form-row > input,
 textarea {
   display: inline-block;
   width: 100%;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 25px;
+  text-transform: capitalize;
   padding: 7px;
   margin-bottom: 30px;
+  border: 1px solid #5553;
+  border-radius: 7px;
+}
+form > .email{
+  float: left;
+  margin-right: 20px;
 }
 @media (min-width: 991px) {
   .form-row-left {
     float: left;
   }
 }
-form > button {
-  display: block;
+.form-row .send-message {
+  display: inline-block;
+  /* flex-wrap: no-wrap; */
+  /* float: right; */
+  width: 100%;
+  /* float: right; */
   border: none;
+  text-align: right;
+  position: relative;
+  
 }
+/* .form-row .btn{
+  position: absolute;
+  top: 0;
+  right: 0;
+} */
 .form-row > textarea {
   float: right;
-  height: 180px;
+  min-height: 180px;
 }
+/* .form-row > input, textarea {
+  
+} */

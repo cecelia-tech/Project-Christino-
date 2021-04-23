@@ -104,8 +104,20 @@
   font-weight: 400;
   line-height: 60px;
   border-radius: 7px;
-  text-align: center;
+  text-align: left;
   position: relative;
+  transition: all 0.25s;
+}
+.hobbies:hover {
+  background-color: #fff;
+  box-shadow: 0 5px 30px #3333;
+  transform: translateY(-3px);
+}
+.hobbies > p {
+  display: flex;
+  width: 100%;
+  padding-left: 70px;
+  margin: 0;
 }
 .hobbies .fa {
   line-height: 60px;
@@ -115,11 +127,15 @@
   top: 0;
   left: 20px;
 }
+.hobbies:hover .fa {
+color: var(--colour-red);
+}
 .hobbies .fa::after {
   content: " ";
   height: 60px;
   width: 1px;
   background-color: var(--colour-grey);
+  opacity: 0.3;
   position: absolute;
   top: 0;
   left: 35px;
