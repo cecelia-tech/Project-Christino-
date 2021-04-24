@@ -1,18 +1,35 @@
 form {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form > .row{
+  display: flex;
   width: 100%;
   text-align: right;
+  padding-bottom: 70px;
+  flex-direction: column;
+  /* flex-wrap:nowrap; */
+  /* align-items: center; */
+  
+}
+.detailInput {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* flex-wrap:wrap-reverse */
 }
 
 .form-row {
-  display: flex;
-  flex-flow: row wrap;
+  display: inline-block;
+ 
   width: 100%;
   height: auto;
+  
 }
 .form-row > input,
 textarea {
-  display: inline-block;
+  /* display: inline-block; */
   width: 100%;
   font-size: 14px;
   line-height: 25px;
@@ -22,35 +39,48 @@ textarea {
   border: 1px solid #5553;
   border-radius: 7px;
 }
-form > .email{
-  float: left;
-  margin-right: 20px;
-}
-@media (min-width: 991px) {
-  .form-row-left {
-    float: left;
-  }
-}
+
+
 .form-row .send-message {
   display: inline-block;
-  /* flex-wrap: no-wrap; */
-  /* float: right; */
+  
   width: 100%;
-  /* float: right; */
+ 
   border: none;
   text-align: right;
   position: relative;
   
 }
-/* .form-row .btn{
-  position: absolute;
-  top: 0;
-  right: 0;
-} */
+@media (min-width: 767px) {
+  form  .row{
+/* flex-direction: row; */
+  }
+  .detailInput > .row{
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+ .email,
+ .firstName{
+  /* flex-direction: row; */
+}
+}
+@media (min-width: 991px) {
+  form .row{
+    flex-direction: row;
+  }
+  .form-row .send-message {
+    text-align: right;
+  }
+}
+@media (min-width: 575px) {
+  form {
+    align-items: center;
+  }
+}
+.form-row .btn{
+  border: none;
+}
 .form-row > textarea {
-  float: right;
+  width: 100%;
   min-height: 180px;
 }
-/* .form-row > input, textarea {
-  
-} */
